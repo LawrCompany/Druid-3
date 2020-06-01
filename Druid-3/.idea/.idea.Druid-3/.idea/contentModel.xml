@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Unity\Projects\Druid-3\Druid-3" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Controller" t="Include">
+            <e p="BaseController.cs" t="Include" />
+            <e p="Controllers.cs" t="Include" />
+            <e p="FlashLightController.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PoolController.cs" t="Include" />
+            <e p="SelectionController.cs" t="Include" />
+            <e p="TimeRemaining" t="Include">
+              <e p="TimeRemaining.cs" t="Include" />
+              <e p="TimeRemainingController.cs" t="Include" />
+              <e p="TimeRemainingExtensions.cs" t="Include" />
+            </e>
+            <e p="UnitMotor.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="FlashLightActiveType.cs" t="Include" />
+            <e p="MouseButton.cs" t="Include" />
+          </e>
+          <e p="Helper" t="Include">
+            <e p="Dbg.cs" t="Include" />
+            <e p="InfoCollision.cs" t="Include" />
+          </e>
+          <e p="Interface" t="Include">
+            <e p="ICollision.cs" t="Include" />
+            <e p="IExecute.cs" t="Include" />
+            <e p="IInitualization.cs" t="Include" />
+            <e p="IMotor.cs" t="Include" />
+            <e p="ISelectObject.cs" t="Include" />
+            <e p="ITimeRemaining.cs" t="Include" />
+          </e>
+          <e p="Model" t="Include">
+            <e p="BaseObjectScene.cs" t="Include" />
+            <e p="CharacterModel.cs" t="Include" />
+            <e p="Eat.cs" t="Include" />
+            <e p="FlashLightModel.cs" t="Include" />
+            <e p="Wall.cs" t="Include" />
+          </e>
+          <e p="ServiceLocator" t="Include">
+            <e p="ServiceLocator.cs" t="Include" />
+            <e p="ServiceLocatorMonoBehavior.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="CharacterUi.cs" t="Include" />
+            <e p="FlashLightUiBar.cs" t="Include" />
+            <e p="FlashLightUiText.cs" t="Include" />
+            <e p="SelectionObjMessageUi.cs" t="Include" />
+            <e p="UiInterface.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Druid-3.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Lawr\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lawr\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Druid-3.1232243774.00" t="ExcludeRecursive" />
+  </component>
+</project>
