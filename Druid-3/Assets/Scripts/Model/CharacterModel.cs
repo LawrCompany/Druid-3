@@ -12,6 +12,14 @@ namespace Model
 
         #endregion
 
+        
+        #region Methods
+
+        public CharacterModel()
+        {
+            _heals = _maxHeals;
+        }
+        
         public void AddHeals(float valuePoint)
         {
             _heals = +valuePoint;
@@ -25,5 +33,7 @@ namespace Model
         {
             return _heals;
         }
+
+        #endregion
     }
 }

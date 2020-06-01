@@ -1,19 +1,17 @@
 ﻿using Interface;
 using Model;
 using UnityEngine;
-using View;
 
 
 namespace Controller
 {
-    public sealed class PlayerController : BaseController,  IExecute, IInitualization
+    public sealed class PlayerController : BaseController, IExecute, IInitualization
     {
         #region Fields
 
         private readonly IMotor _motor;
 
         private CharacterModel _characterModel;
-        // private CharacterUi _characterUi;
 
         #endregion
 
@@ -23,9 +21,8 @@ namespace Controller
         public void Initialization()
         {
             _characterModel = Object.FindObjectOfType<CharacterModel>();
-            // _characterUi = Object.FindObjectOfType<CharacterUi>();
         }
-        
+
         public PlayerController(IMotor motor)
         {
             _motor = motor;
@@ -33,10 +30,13 @@ namespace Controller
 
         public void Execute()
         {
-            if (!IsActive) { return; }
+            if (!IsActive)
+            {
+                return;
+            }
+
             _motor.Move();
-            // var test = _characterModel.GetHeals();
-            // UiInterface.CharacterUi.Text = test;
+            UiInterface.CharacterUi.Text = _characterModel.GetHeals();
         }
 
         #endregion
