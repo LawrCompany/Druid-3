@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Helper;
+using UnityEngine;
 
 
 namespace Controller
@@ -22,9 +24,19 @@ namespace Controller
 
         private void Update()
         {
-            for (var i = 0; i < _controllers.Lenght; i++)
+            // Dbg.Log($"GameController._controllers.Lenghth: {_controllers.Lenghth}");
+            for (var i = 0; i < _controllers.Lenghth; i++)
             {
                 _controllers[i].Execute();
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            // Dbg.Log($"GameController._controllers.FixedControllersLenghth: {_controllers.FixedControllersLenghth}");
+            for (var i = 0; i < _controllers.FixedControllersLenghth; i++)
+            {
+                _controllers.FixedExecuteControllers[i].FixedExecute();
             }
         }
 

@@ -11,6 +11,7 @@
             <e p="FlashLightController.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
+            <e p="MoveController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PoolController.cs" t="Include" />
             <e p="SelectionController.cs" t="Include" />
@@ -32,6 +33,7 @@
           <e p="Interface" t="Include">
             <e p="ICollision.cs" t="Include" />
             <e p="IExecute.cs" t="Include" />
+            <e p="IFixedExecute.cs" t="Include" />
             <e p="IInitualization.cs" t="Include" />
             <e p="IMotor.cs" t="Include" />
             <e p="ISelectObject.cs" t="Include" />
