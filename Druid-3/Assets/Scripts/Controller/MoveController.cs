@@ -38,6 +38,7 @@ namespace Controller
 
         private void MoveLogic()
         {
+            // Dbg.Log($"MoveController.MoveLogic _cashMovementVector=:{_cashMovementVector}");
             _characterModel.Rigidbody.AddForce(_cashMovementVector * _characterModel.Speed, ForceMode.Impulse);
         }
 
@@ -59,6 +60,7 @@ namespace Controller
         {
             if(!IsActive) return;
 
+            Dbg.Log($"MoveController.Move movementVector=:{movementVector}");
             _cashMovementVector = movementVector;
         }
 

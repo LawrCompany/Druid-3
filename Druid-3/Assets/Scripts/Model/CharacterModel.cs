@@ -13,7 +13,7 @@ namespace Model
         [SerializeField] private float _heals;
 
         public float Speed = 0.3f;
-        public float JumpForce = 1f;
+        public float JumpForce = 10f;
 
         public LayerMask GroundLayer = 1; // 1 == "Default" защита от дурака
         

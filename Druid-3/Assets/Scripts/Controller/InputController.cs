@@ -59,15 +59,15 @@ namespace Controller
             {
                 ServiceLocator.Resolve<FlashLightController>().Switch();
             }
-
+            
             _movementVector = Vector3.zero;
-            if (Input.GetKeyDown(_moveForward))
+            if (Input.GetKey(_moveForward))
                 _movementVector.z += 1;
-            if (Input.GetKeyDown(_moveBack))
+            if (Input.GetKey(_moveBack))
                 _movementVector.z -= 1;
-            if (Input.GetKeyDown(_moveLeft))
+            if (Input.GetKey(_moveLeft))
                 _movementVector.x -= 1;
-            if (Input.GetKeyDown(_moveRight))
+            if (Input.GetKey(_moveRight))
                 _movementVector.x += 1;
             ServiceLocator.Resolve<MoveController>().Move(_movementVector.normalized);
 
