@@ -74,6 +74,10 @@ namespace Controller
             if (Input.GetKeyDown(_jump))
                 ServiceLocator.Resolve<MoveController>().Jump(Vector3.up);
 
+            ServiceLocator.Resolve<CameraController>().ZoomCamera(Input.GetAxis("Mouse ScrollWheel"));
+
+            ServiceLocator.Resolve<CameraController>().RotateCamera(Input.GetAxis("Mouse X"),Input.GetAxis("Mouse Y"));
+
 
             //if (Math.Abs(Input.GetAxis("Mouse ScrollWheel") - _cashMouseScrollWheel) > 0.1f)
             // Dbg.Log($"Vector2 scroll = Input.mouseScrollDelta; {Input.mouseScrollDelta.y}");

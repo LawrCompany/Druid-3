@@ -39,12 +39,16 @@ namespace Controller
         private void MoveLogic()
         {
             // Dbg.Log($"MoveController.MoveLogic _cashMovementVector=:{_cashMovementVector}");
-            _characterModel.Rigidbody.AddForce(_cashMovementVector * _characterModel.Speed, ForceMode.Impulse);
+            if (_characterModel.IsGrounded /*&& (_cashMovementVector != Vector3.zero)*/)
+            {
+                _characterModel.Rigidbody.AddForce(_cashMovementVector * _characterModel.Speed, ForceMode.Impulse);
+                _characterModel.NormalizeVelocity();
+            }
         }
 
         private void JumpLogic()
         {
-            if (_characterModel._isGrounded && (_cashJumpVector != Vector3.zero))
+            if (_characterModel.IsGrounded && (_cashJumpVector != Vector3.zero))
             {
                 _characterModel.Rigidbody.AddForce(_cashJumpVector * _characterModel.JumpForce, ForceMode.Impulse);
                 _cashJumpVector = Vector3.zero;
@@ -60,7 +64,7 @@ namespace Controller
         {
             if(!IsActive) return;
 
-            Dbg.Log($"MoveController.Move movementVector=:{movementVector}");
+            // Dbg.Log($"MoveController.Move movementVector=:{movementVector}");
             _cashMovementVector = movementVector;
         }
 

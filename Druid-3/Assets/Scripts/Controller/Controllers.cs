@@ -34,10 +34,11 @@ namespace Controller
         {
             //if (Application.platform == RuntimePlatform.PS4)
 
-            IMotor motor = default;
-            motor = new UnitMotor(ServiceLocatorMonoBehavior.GetService<CharacterController>());
+            // IMotor motor = default;
+            // motor = new UnitMotor(ServiceLocatorMonoBehavior.GetService<CharacterController>());
             // ServiceLocator.SetService(new PlayerController(motor));
             ServiceLocator.SetService(new MoveController());
+            ServiceLocator.SetService(new CameraController());
             // ServiceLocator.SetService(new Inventory());
             ServiceLocator.SetService(new TimeRemainingController());
             ServiceLocator.SetService(new FlashLightController());
@@ -47,12 +48,13 @@ namespace Controller
             ServiceLocator.SetService(new PoolController());
             //ServiceLocator.SetService(new EffectController());
 
-            _executeControllers = new IExecute[4];
+            _executeControllers = new IExecute[5];
             _executeControllers[0] = ServiceLocator.Resolve<TimeRemainingController>();
             // _executeControllers[1] = ServiceLocator.Resolve<PlayerController>();
             _executeControllers[1] = ServiceLocator.Resolve<FlashLightController>();
             _executeControllers[2] = ServiceLocator.Resolve<InputController>();
             _executeControllers[3] = ServiceLocator.Resolve<SelectionController>();
+            _executeControllers[4] = ServiceLocator.Resolve<CameraController>();
 
             _fixedExecuteControllers = new IFixedExecute[1];
             _fixedExecuteControllers[0] = ServiceLocator.Resolve<MoveController>();

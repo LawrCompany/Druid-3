@@ -20,7 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da512f41-9798-4a44-8ad3-797bcdeb7cc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/CameraModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/CameraModel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Druid-3/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Druid-3/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Druid-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Druid-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Controllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Controllers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/MoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/MoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/CharacterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/CharacterModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +55,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ServiceLocator/ServiceLocatorMonoBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IInitualization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ITimeRemaining.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IMotor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/BaseObjectScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Eat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IFixedExecute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISelectObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +82,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/SelectionObjMessageUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/20/accc8c39/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/FlashLightUiText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/CameraModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/IExecute.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -108,11 +124,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/View/UiInterface.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interface/IExecute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/CharacterModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Controllers.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/CharacterModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/MoveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Controllers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/CameraModel.cs" />
       </list>
     </option>
   </component>
@@ -158,7 +178,8 @@
       <workItem from="1590741290092" duration="4333000" />
       <workItem from="1590979439517" duration="9024000" />
       <workItem from="1591078205078" duration="2429000" />
-      <workItem from="1591171763889" duration="8289000" />
+      <workItem from="1591171763889" duration="9050000" />
+      <workItem from="1591336439887" duration="16690000" />
     </task>
     <servers />
   </component>
@@ -192,17 +213,17 @@
       <screen x="0" y="0" width="1832" height="1080" />
     </state>
     <state x="299" y="358" key="LayersDialog/0.0.1832.1080@0.0.1832.1080" timestamp="1590751446223" />
-    <state x="736" y="228" key="RiderGenerateDialog" timestamp="1591185879841">
+    <state x="736" y="228" key="RiderGenerateDialog" timestamp="1591347724374">
       <screen x="0" y="0" width="1832" height="1080" />
     </state>
-    <state x="736" y="228" key="RiderGenerateDialog/0.0.1832.1080@0.0.1832.1080" timestamp="1591185879841" />
+    <state x="736" y="228" key="RiderGenerateDialog/0.0.1832.1080@0.0.1832.1080" timestamp="1591347724374" />
     <state x="686" y="146" key="SettingsEditor" timestamp="1591079524836">
       <screen x="0" y="0" width="1832" height="1080" />
     </state>
     <state x="686" y="146" key="SettingsEditor/0.0.1832.1080@0.0.1832.1080" timestamp="1591079524836" />
-    <state x="121" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1591189901183">
+    <state x="121" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1591348124330">
       <screen x="0" y="0" width="1832" height="1080" />
     </state>
-    <state x="121" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1832.1080@0.0.1832.1080" timestamp="1591189901183" />
+    <state x="121" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1832.1080@0.0.1832.1080" timestamp="1591348124330" />
   </component>
 </project>
